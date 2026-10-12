@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AFC IT Portal- Home Page</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        :root {
+            --primary: #1b4332;
+            --accent: #40916c;
+            --dark: #2d3748;
+            --light: #f7fafc;
+        }
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            display: flex;
+            background-color: var(--light);
+            color: var(--dark);
+        }
+        #sidebar {
+            width: 260px;
+            background-color: var(--primary);
+            height: 100vh;
+            position: fixed;
+            color: white;
+            padding: 20px;
+        }
+        #sidebar h2 { border-bottom: 2px solid var(--accent); padding-bottom: 10px; font-size: 1.2rem; }
+        #sidebar a { color: #d8f3dc; display: block; padding: 12px 8px; text-decoration: none; border-radius: 4px; margin-bottom: 5px; }
+        #sidebar a:hover { background-color: var(--accent); color: white; }
+        #main-content {
+            margin-left: 300px;
+            padding: 40px;
+            flex-grow: 1;
+        }
+        .header-banner {
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            color: white;
+            padding: 30px;
+            border-radius: 8px;
+            margin-bottom: 40px;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+        .sop-card {
+            background: white;
+            border-radius: 8px;
+            padding: 25px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border-top: 4px solid var(--primary);
+            transition: transform 0.2s;
+        }
+        .sop-card:hover { transform: translateY(-5px); }
+        .sop-card h3 { margin-top: 0; color: var(--primary); }
+        .btn {
+            display: inline-block;
+            background-color: var(--primary);
+            color: white;
+            padding: 8px 16px;
+            text-decoration: none;
+            border-radius: 4px;
+            margin-top: 15px;
+            font-size: 0.9rem;
+        }
+        .btn:hover { background-color: var(--accent); }
+    </style>
+</head>
+<body>
+
+    <nav id="sidebar">
+        <h2>AFC Navigation</h2>
+        <a href="index.html">Home Page</a>
+        <a href="structure.html">Staff Structure</a>
+        <a href="security.html"> IT Security Policy guidelines</a>
+        <a href="acceptableusepolicy.html">Acceptable Use Policy</a>
+        <a href="acquisition.html"> Acquisition Procedures|Approvals </a>
+        <a href="servicedesk.html">Service Desk</a>
+    </nav>
+
+    <main id="main-content">
+        <header class="header-banner">
+            <h1>African Foods Company</h1>
+            <p>Internal IT Operations & Standard Operating Procedures Portal</p>
+        </header>
+
+        <h2>Standard Operating Procedures Repository</h2>
+        <div class="grid-container">
+            <div class="sop-card">
+                <h3>1. IT Staff Structure</h3>
+                <p>View administrative reporting lines, clear organizational boundaries, and localized branch IT technical contacts.</p>
+                <a href="structure.html" class="btn">Access SOP</a>
+            </div>
+            <div class="sop-card">
+                <h3>2. IT Security Guidelines</h3>
+                <p>Mandatory security rules including account MFA, secure site-to-site VPN tunnels, and POPIA data privacy laws.</p>
+                <a href="security.html" class="btn">Access SOP</a>
+            </div>
+            <div class="sop-card">
+                <h3>3. Acceptable Use Policy</h3>
+                <p>Understand your operational responsibilities regarding business systems, data sharing, and company asset configurations.</p>
+                <a href="acceptableusepolicy.html" class="btn">Access SOP</a>
+            </div>
+            <div class="sop-card">
+                <h3>4. Acquisition Procedures</h3>
+                <p>Hardware and software purchasing channels, verification criteria, configuration image pipelines, and asset tag tasks.</p>
+                <a href="acquisition.html" class="btn">Access SOP</a>
+            </div>
+            <div class="sop-card">
+                <h3>5. Service Desk Protocols</h3>
+                <p>Log network or equipment errors. Review target SLA windows, urgency classifications, and systematic escalation trees.</p>
+                <a href="servicedesk.html" class="btn">Access SOP</a>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>

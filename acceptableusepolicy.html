@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AFC IT Portal - Acceptable Use Policy</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        :root {
+            --primary: #1b4332;
+            --accent: #40916c;
+            --dark: #2d3748;
+            --light: #f7fafc;
+            --success: #2e7d32;
+            --danger: #c62828;
+        }
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            display: flex;
+            background-color: var(--light);
+            color: var(--dark);
+        }
+        #sidebar {
+            width: 260px;
+            background-color: var(--primary);
+            height: 100vh;
+            position: fixed;
+            color: white;
+            padding: 20px;
+        }
+        #sidebar h2 { border-bottom: 2px solid var(--accent); padding-bottom: 10px; font-size: 1.2rem; }
+        #sidebar a { color: #d8f3dc; display: block; padding: 12px 8px; text-decoration: none; border-radius: 4px; margin-bottom: 5px; }
+        #sidebar a:hover { background-color: var(--accent); color: white; }
+        #main-content {
+            margin-left: 300px;
+            padding: 40px;
+            flex-grow: 1;
+            max-width: 1000px;
+        }
+        .header-banner {
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            color: white;
+            padding: 30px;
+            border-radius: 8px;
+            margin-bottom: 40px;
+        }
+        .grid-split {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+        }
+        .policy-card {
+            background: white;
+            border-radius: 8px;
+            padding: 25px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        .card-allowed { border-top: 5px solid var(--success); }
+        .card-prohibited { border-top: 5px solid var(--danger); }
+        h2 { margin-top: 0; font-size: 1.3rem; }
+        .card-allowed h2 { color: var(--success); }
+        .card-prohibited h2 { color: var(--danger); }
+        ul { padding-left: 20px; }
+        li { margin-bottom: 12px; line-height: 1.5; }
+    </style>
+</head>
+<body>
+
+    <nav id="sidebar">
+        <h2>AFC Navigation</h2>
+        <a href="index.html">Home Page</a>
+        <a href="structure.html">Staff Structure</a>
+        <a href="security.html">IT Security Policy Guidelines</a>
+        <a href="acceptableusepolicy.html">Acceptable Use Policy</a>
+        <a href="acquisition.html">Acquisition Procedures|Approvals</a>
+        <a href="servicedesk.html">Service Desk</a>
+    </nav>
+
+    <main id="main-content">
+        <header class="header-banner">
+            <h1>Acceptable Use Policy (AUP)</h1>
+            <p>Core guidelines regulating the usage of corporate devices, organizational networks, and Microsoft 365 services.</p>
+        </header>
+
+        <div class="grid-split">
+            <!-- Permitted Actions -->
+            <div class="policy-card card-allowed">
+                <h2>Permitted System Use</h2>
+                <ul>
+                    <li>Utilize official business infrastructure primarily for authorized corporate operations and communications.</li>
+                    <li>Ensure restricted personal use does not violate laws, compromise your tasks, or consume heavy bandwidth channels.</li>
+                    <li>Always treat clients and internal team members with professional digital courtesy and respect.</li>
+                    <li>Store work documentation exclusively inside verified, shared organizational directories.</li>
+                    <li>Maintain strict physical monitoring and safety of company computers during multi-site travel.</li>
+                    <li>Proactively report accidental asset data exposures immediately to IT support teams.</li>
+                </ul>
+            </div>
+
+            <!-- Prohibited Actions -->
+            <div class="policy-card card-prohibited">
+                <h2>Strictly Prohibited Actions</h2>
+                <ul>
+                    <li>Do not configure unapproved browser plug-ins, alter web filters, or navigate to dangerous external destinations.</li>
+                    <li>Never distribute copyrighted materials or operate pirated application builds inside company machines.</li>
+                    <li>Do not connect private external hardware routers, network access points, or unvetted storage drives.</li>
+                    <li>Never transfer confidential organizational data sets to personal chat lines or private emails.</li>
+                    <li>Do not intentionally obscure system security oversights or data handling slip-ups from IT managers.</li>
+                    <li>System monitoring tools may legally review corporate networks at any time; expect zero total privacy for unauthorized streams.</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AFC IT Portal - Security Guidelines</title>
+    <style>
+        :root {
+            --primary: #1b4332;
+            --accent: #40916c;
+            --dark: #2d3748;
+            --light: #f7fafc;
+        }
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            display: flex;
+            background-color: var(--light);
+            color: var(--dark);
+        }
+        #sidebar {
+            width: 260px;
+            background-color: var(--primary);
+            height: 100vh;
+            position: fixed;
+            color: white;
+            padding: 20px;
+        }
+        #sidebar h2 { border-bottom: 2px solid var(--accent); padding-bottom: 10px; font-size: 1.2rem; }
+        #sidebar a { color: #d8f3dc; display: block; padding: 12px 8px; text-decoration: none; border-radius: 4px; margin-bottom: 5px; }
+        #sidebar a:hover { background-color: var(--accent); color: white; }
+        #main-content {
+            margin-left: 300px;
+            padding: 40px;
+            flex-grow: 1;
+            max-width: 1000px;
+        }
+        .header-banner {
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            color: white;
+            padding: 30px;
+            border-radius: 8px;
+            margin-bottom: 40px;
+        }
+        .section-card {
+            background: white;
+            border-radius: 8px;
+            padding: 25px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            margin-bottom: 25px;
+            border-left: 4px solid var(--primary);
+        }
+        .section-card h2 { margin-top: 0; color: var(--primary); font-size: 1.3rem; border-bottom: 1px solid #e2e8f0; padding-bottom: 8px; }
+        ul { padding-left: 20px; margin: 10px 0 0 0; }
+        li { margin-bottom: 8px; line-height: 1.5; }
+    </style>
+</head>
+<body>
+
+    <nav id="sidebar">
+        <h2>AFC Navigation</h2>
+        <a href="index.html">Home Page</a>
+        <a href="structure.html">Staff Structure</a>
+        <a href="security.html">IT Security Policy Guidelines</a>
+        <a href="acceptableusepolicy.html">Acceptable Use Policy</a>
+        <a href="acquisition.html">Acquisition Procedures|Approvals</a>
+        <a href="servicedesk.html">Service Desk </a>
+    </nav>
+
+    <main id="main-content">
+        <header class="header-banner">
+            <h1>IT Security Policy Guidelines</h1>
+            <p>Purpose: To safeguard AFC's computers, network, data, and online services against unauthorized access and cyber threats.</p>
+        </header>
+
+        <div class="section-card">
+            <h2>Access Control & User Accounts</h2>
+            <ul>
+                <li><strong>Unique Accounts:</strong> Each employee must have a dedicated account with a strong, unique password.</li>
+                <li><strong>MFA Mandate:</strong> Multi-factor authentication is mandatory for administrator accounts, remote access, and email systems.</li>
+                <li><strong>Least Privilege:</strong> Employees may only access the specific information required to perform their jobs.</li>
+                <li><strong>Termination Protocol:</strong> System access must be immediately revoked when an employee leaves or changes positions.</li>
+            </ul>
+        </div>
+
+        <div class="section-card">
+            <h2>Network & Wireless Perimeter Security</h2>
+            <ul>
+                <li><strong>Site-to-Site VPN:</strong> All regional branches must connect to the Cape Town HQ via secure, encrypted VPN tunnels.</li>
+                <li><strong>Firewall Inspection:</strong> Inbound and outbound perimeter traffic must be continuously filtered by firewalls.</li>
+                <li><strong>VLAN Segmentation:</strong> Separate VLAN networks must isolate departments, servers, and guest Wi-Fi streams.</li>
+                <li><strong>Guest Isolation:</strong> Visitor Wi-Fi channels must strictly prevent access to company servers and private devices.</li>
+            </ul>
+        </div>
+
+        <div class="section-card">
+            <h2>Data Protection, Privacy & POPIA Compliance</h2>
+            <ul>
+                <li><strong>POPIA Alignment:</strong> All collection and handling of client or finical data must strictly adhere to the South African Protection of Personal Information Act.</li>
+                <li><strong>Storage Bans:</strong> Unauthorized cloud accounts, personal emails, or unknown USB drives must never host corporate files.</li>
+                <li><strong>Website Security:</strong> Only authorized administrators using MFA are permitted to publish web platform updates.</li>
+            </ul>
+        </div>
+
+        <div class="section-card">
+            <h2>Business Continuity, Backups & Incidents</h2>
+            <ul>
+                <li><strong>Immutable Backups:</strong> Critical databases and Sage ERP data must maintain at least one completely offline, ransomware-protected backup.</li>
+                <li><strong>Physical Security:</strong> Server rooms and network utility cabinets must remain locked and limited to authorized technicians.</li>
+                <li><strong>Immediate Reporting:</strong> Employees must instantly report suspected hacks, strange account changes, or lost devices to the IT Manager.</li>
+            </ul>
+        </div>
+    </main>
+
+</body>
+</html>
