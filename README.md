@@ -13,8 +13,8 @@ African Foods Company (AFC) exports packaged South African food products to inte
 
 SOP Guidelines:
 1.IT Staff Structure (structure.html):Maps out exact hierarchical reporting tiers and localized technical escalation queues.
-2.Security Policy Guidelines (security.html):** Outlines multi-factor authentication (MFA) rules, network segmentation (VLANs), and POPIA data privacy alignments.
-3.Acceptable Use Policy (acceptableusepolicy.html): Clearly delineates permitted and prohibited systems use for incoming enterprise end-users.
+2.Security Policy Guidelines (security.html): Outlines multi-factor authentication (MFA) rules, network segmentation (VLANs), and POPIA data privacy alignments.
+3.Acceptable Use Policy (acceptableusepolicy.html): Clearly states permitted and prohibited systems use for incoming enterprise end-users.
 4.Acquisition Procedures & Approvals (acquisition.html):Governs strict multi-tier financial authorization gates (R15,000 threshold checks) and corporate software imaging.
 5.Service Desk Protocols (service-desk.html):Establishes an automated triage engine executing strict 15-minute Critical SLA windows to avoid costly shipping backlogs.
 6.Academic Reference List (Changelog): adding every thing we have done 
