@@ -6,91 +6,153 @@
     <title>AFC IT Portal - Service Desk|Help Desk Procedures</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        :root {
-        --primary: #0f1e3a;
-        --accent: #28303a;
-        --medium: #151617;
-        --light: #355982;
-        --critical: #e53e3e;
-        --high: #dd6b20;
-        --dark: #d7b641;
-        --low: #3182ce;
-        }
-        body {
-            font-family: 'Segoe UI', Arial, sans-serif;
-            margin: 0;
-            display: flex;
-            background-color: var(--light);
-            color: var(--medium);
-        }
-        #sidebar {
-            width: 260px;
-            background-color: var(--primary);
-            height: 100vh;
-            position: fixed;
-            color: white;
-            padding: 20px;
-            box-sizing: border-box;
-        }
-        #sidebar h2 { border-bottom: 2px solid var(--accent); padding-bottom: 10px; font-size: 1.2rem; margin-top: 0; }
-        #sidebar a { color: #d8f3dc; display: block; padding: 12px 8px; text-decoration: none; border-radius: 4px; margin-bottom: 5px; }
-        #sidebar a:hover { background-color: var(--accent); color: white; }
-        #main-content {
-            margin-left: 260px;
-            padding: 40px;
-            flex-grow: 1;
-            max-width: 1000px;
-            box-sizing: border-box;
-        }
-        .header-banner {
-            background: linear-gradient(135deg, var(--primary), var(--accent));
-            color: white;
-            padding: 30px;
-            border-radius: 8px;
-            margin-bottom: 40px;
-        }
-        .header-banner h1 { margin: 0 0 10px 0; }
-        .header-banner p { margin: 0; }
-        .section-card {
-            background: white;
-            border-radius: 8px;
-            padding: 25px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-            margin-bottom: 30px;
-            border-left: 4px solid var(--primary);
-        }
-        .section-card h2 { margin-top: 0; color: var(--primary); border-bottom: 1px solid #e2e8f0; padding-bottom: 10px; }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 15px;
-            background: white;
-        }
-        th, td {
-            padding: 12px;
-            text-align: left;
-            border-bottom: 1px solid #e2e8f0;
-        }
-        th { background-color: var(--primary); color: white; }
-        .badge {
-            display: inline-block;
-            padding: 4px 8px;
-            border-radius: 4px;
-            color: white;
-            font-weight: bold;
-            font-size: 0.85rem;
-        }
-        .badge-critical { background-color: var(--critical); }
-        .badge-high { background-color: var(--high); }
-        .badge-medium { background-color: var(--dark); color: #fff; }
-        .badge-low { background-color: var(--low); }
-        .grid-two {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 20px;
-        }
-        ul { padding-left: 20px; margin: 10px 0 0 0; }
-        li { margin-bottom: 8px; line-height: 1.5; }
+:root {
+    --primary: #0f1e3a;
+    --accent: #28303a;
+    --medium: #151617;
+    --light: #355982;
+    --critical: #e53e3e;
+    --high: #dd6b20;
+    --dark: #d7b641;
+    --low: #3182ce;
+ }
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    background-color: var(--light);
+    color: var(--medium);
+}
+#sidebar {
+    width: 260px;
+    background-color: var(--primary);
+    height: 100vh;
+    position: fixed;
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+}
+#sidebar h2 {
+     border-bottom: 2px solid var(--accent); padding-bottom: 10px; font-size: 1.2rem; margin-top: 0; 
+}
+#sidebar a { 
+    color: #d8f3dc; display: block; padding: 12px 8px; text-decoration: none; border-radius: 4px; margin-bottom: 5px; 
+}
+#sidebar a:hover {
+     background-color: var(--accent); color: white; 
+    }
+#main-content {
+    margin-left: 260px;
+    padding: 40px;
+    flex-grow: 1;
+    max-width: 1000px;
+    box-sizing: border-box;
+}
+.header-banner {
+    background: linear-gradient(135deg, var(--primary), var(--accent));
+    color: white;
+    padding: 30px;
+    border-radius: 8px;
+    margin-bottom: 40px;
+}
+.header-banner h1 { 
+    margin: 0 0 10px 0; 
+}
+.header-banner p { 
+    margin: 0; 
+}
+.section-card {
+    background: white;
+    border-radius: 8px;
+    padding: 25px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    margin-bottom: 30px;
+    border-left: 4px solid var(--primary);
+}
+.section-card h2 {
+     margin-top: 0; color: var(--primary); border-bottom: 1px solid #e2e8f0; padding-bottom: 10px; 
+    }
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    background: white;
+}
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #e2e8f0;
+}
+th { background-color: var(--primary); color: white; }
+.badge {
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 4px;
+    color: white;
+    font-weight: bold;
+    font-size: 0.85rem;
+}
+.badge-critical { 
+    background-color: var(--critical); 
+}
+.badge-high { 
+    background-color: var(--high); 
+}
+.badge-medium { 
+    background-color: var(--dark); color: #fff; 
+}
+.badge-low { 
+    background-color: var(--low); 
+}
+.grid-two {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+ul {
+     padding-left: 20px; margin: 10px 0 0 0; 
+    }
+li { 
+    margin-bottom: 8px; line-height: 1.5; 
+}
+.portal-footer {
+    margin-top: 60px;
+    padding: 25px 0;
+    border-top: 1px solid var(--border-color);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.footer-top-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px dashed var(--border-color);
+}
+
+.footer-item {
+    font-size: 0.85rem;
+    color: #718096;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: 500;
+}
+
+.footer-legal-notice {
+    margin-top: 15px;
+    font-size: 0.78rem;
+    color: #a0aec0;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.footer-legal-notice strong {
+    color: var(--medium);
+}
     </style>
 </head>
 <body>
@@ -179,6 +241,17 @@
                 </ul>
             </div>
         </div>
+<hr>
+        <footer class="portal-footer">
+            <div class="footer-legal-notice">
+                <p>© 2026 <strong>African Foods Company (Pty) Ltd</strong>. All Rights Reserved. This portal and its entire contents including all IT Standard Operating Procedures (SOPs), network configurations, security baselines and organizational reporting lines are the exclusive intellectual property of African Foods Company. Unauthorized copying, distribution, modification, reverse engineering, or public exhibition of these materials constitutes a severe copyright infringement.</p>
+            </div>
+            <div class="footer-top-row">
+                <div class="footer-item"><strong>Emergency Helpdesk:</strong> Internal Extension 4400</div>
+                <div class="footer-item"><strong>Statutory Governance:</strong> Regulatory POPIA Compliant</div>
+                <div class="footer-item"> <strong>Configuration Track:</strong> System v2.2.0 (Active Build)</div>
+            </div>
+        </footer>   
     </main>
 
 </body>
