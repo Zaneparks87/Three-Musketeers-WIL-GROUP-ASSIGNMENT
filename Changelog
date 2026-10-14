@@ -33,8 +33,8 @@ from pintrest
 --dark: #151617;
 --light: #355982;
  Changed a couple things related them to the scenario
-
-
-
+we kinda had a challenge on servicedesk on the colour change the dark(which is orange represents medium severity) and 
+and the medium(which is black represents the font color)
+added a footer
 
 
